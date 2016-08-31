@@ -1,0 +1,28 @@
+{
+  "name": "async-init",
+  "version": "1.0.0",
+  "description": "Make asynchronous initialization cleaner to work with.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node node_modules/jasmine-node/lib/jasmine-node/cli.js ."
+  },
+  "tags": [
+    "async",
+    "init",
+    "asynchronous",
+    "initialization"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heartnetkung/async-init.git"
+  },
+  "author": "Touchchai Chotisorayuth <heartnetkung@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heartnetkung/async-init/issues"
+  },
+  "homepage": "https://github.com/heartnetkung/async-init#readme",
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
