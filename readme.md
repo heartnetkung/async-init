@@ -11,7 +11,7 @@ exports.getUser = function(callback) {
 };
 ```
 
-The flaw of this code is that any getUser function call before the init is finished will fail. This is the problem we try to solve.
+The flaw of this code is that any getUser function call before the init is finished will fail. Notice that your database init is asynchronous but your exports.getUser must be declared synchronously. The correct implementation of this program is not clean as it requires *Promise* and callback, or worse change your function design entirely. This library tries to offer a nice-ish solution.
 
 ## Example
 ```js
