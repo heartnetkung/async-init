@@ -17,7 +17,7 @@ exports.create = function() {
 		return function() {
 			var args = arguments;
 			isDone ?
-				originalFunction.apply(obj, args) :
+				process.nextTick(function(){originalFunction.apply(obj, args)}) :
 				event.once('done', function() { originalFunction.apply(obj, args); });
 		};
 	};
